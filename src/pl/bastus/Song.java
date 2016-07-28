@@ -13,12 +13,6 @@ class Song {
         this.bpm = bpm;
     }
 
-	/*
-    public int compareTo(Piosenka p) {
-		return tytul.compareTo(p.getTytul());
-	}
-	*/
-
     @Override
     public boolean equals(Object s) {
         Song song = null;

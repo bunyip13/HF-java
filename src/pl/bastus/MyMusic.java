@@ -25,22 +25,9 @@ public class MyMusic {
         Collections.sort(songList, (Song p1, Song p2) -> p1.getBpm().compareTo(p2.getBpm()));
         songList.forEach(Song::printSong);
 
-//		for(Piosenka p : listaPiosenek){
-//			p.printSong();
-//		}
-
         HashSet<Song> songHashList = new HashSet<>();
         songHashList.addAll(songList);
         songHashList.forEach(System.out::println);
-
-//		System.out.println(songHashList + "\n");
-//		System.out.println(songHashList);
-
-		/*
-		 * Kolekcja HashSet posiada prostą metodę addAll(), która umożliwia
-		 * przekazanie innej kolekcji i zapisanie w zbiorze wszystkich jej
-		 * elementów. Efekt jest ten sam, jakbyśmy każdą piosenkę dodali osobno
-		 */
     }
 
     private void getSongs() {
